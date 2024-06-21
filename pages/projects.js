@@ -21,7 +21,7 @@ export default function Projects() {
             <div className={style.right}>
                 <div className={style.frame}>
                 {project && 
-                    <Image src={project.img} className={style.img} width={500} height={500}/>
+                    <Image src={project.img} className={style.img} alt="My projects" width={500} height={500}/>
                 }
                 </div>
                 <div className={style.buttonBox}>
