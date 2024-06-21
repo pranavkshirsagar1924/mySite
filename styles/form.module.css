@@ -64,7 +64,7 @@
 
 @keyframes l3 {
     to {
-        transform: rotate(1turn)
+        transform: rotate(1turn);
     }
 }
 .span{
@@ -72,8 +72,7 @@
     text-align: center;
     margin: 1rem;
 }
-@media screen and
-(max-width:1200px) {
+@media screen and (max-width:1200px) {
      .form_main{
         border: none;
      }
