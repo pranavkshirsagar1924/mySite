@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import style from "../styles/project.module.css";
 import projectsData from './data';
+import Image from 'next/image';
 
 export default function Projects() {
     const [project, setProject] = useState(projectsData[0]);
@@ -20,7 +21,7 @@ export default function Projects() {
             <div className={style.right}>
                 <div className={style.frame}>
                 {project && 
-                    <img src={project.img} className={style.img}></img>
+                    <Image src={project.img} className={style.img} width={500} height={500}/>
                 }
                 </div>
                 <div className={style.buttonBox}>

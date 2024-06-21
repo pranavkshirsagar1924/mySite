@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import style from "../styles/skills.module.css";
+import Image from 'next/image';
 
 export default function Skills() {
   const labels = ["Python", "Flask", "NextJs", "ReactJs", "API", "AWS", "WEB Scrapping", "Android Development"];
@@ -17,7 +18,7 @@ export default function Skills() {
   return (
     <div className={style.main_frame}>
       <div className={style.left}>
-        <img src='/images/hon.gif' alt='Animation' />
+        <Image src='/images/hon.gif' alt='Animation' width={500} height={500} />
       </div>
       <div className={style.right}>
         <ul className={style.skills}>

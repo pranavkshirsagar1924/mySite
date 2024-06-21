@@ -1,15 +1,18 @@
 import React from 'react';
 import style from "../styles/aboutme.module.css";
+import Image from 'next/image';
 
 const AboutMe = () => (
     <div className={style.main_frame}>
         <div className={style.right}>
             <div className={style.img_box}>
                 {/* Place the Image component here */}
-                    <img
+                    <Image
                         className={style.img}
-                        src="https://images.pexels.com/photos/3153203/pexels-photo-3153203.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        src="/images/1.jpg"
                         alt="boy coding on laptop"
+                        height={650}
+                        width={600}
                     />
             </div>
         </div>
