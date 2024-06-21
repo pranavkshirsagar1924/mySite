@@ -1,0 +1,80 @@
+.main_frame {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.form_main {
+    border: 2px solid #ffff;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.email,
+.note {
+    width: 50vh;
+    padding: 1rem;
+    margin: 1rem;
+    resize: none;
+    border-radius: 10px;
+    background-color: rgb(45, 45, 45);
+    border: none;
+    outline: none;
+}
+
+.button {
+    width: 40%;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    border: none;
+    padding: 0.5rem;
+    background-color: rgba(13, 158, 255, 0.934);
+    margin-left: 30%;
+    border-radius: 10px;
+    cursor: pointer;
+    place-items: center;
+}
+
+.loader {
+    margin-left: 40%;
+    width: 40px;
+    padding: 4px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #000000;
+    --_m:
+        conic-gradient(#0000 10%, #000),
+        linear-gradient(#000 0 0) content-box;
+    -webkit-mask: var(--_m);
+    mask: var(--_m);
+    -webkit-mask-composite: source-out;
+    mask-composite: subtract;
+    animation: l3 0.5s infinite linear;
+}
+
+@keyframes l3 {
+    to {
+        transform: rotate(1turn)
+    }
+}
+.span{
+    color: green;
+    text-align: center;
+    margin: 1rem;
+}
+@media screen and
+(max-width:1200px) {
+     .form_main{
+        border: none;
+     }
+}
