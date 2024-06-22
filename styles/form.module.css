@@ -72,7 +72,7 @@
     text-align: center;
     margin: 1rem;
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width:950px) {
      .form_main{
         border: none;
      }
