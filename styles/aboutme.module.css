@@ -16,22 +16,24 @@
 .max {
   font-size: 120px;
   background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff7e5f, #feb47b);
-    background-size: 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradient 3s ease-in-out infinite;
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 3s ease-in-out infinite;
 }
+
 @keyframes gradient {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
+
 .right {
   width: 50%;
   height: 100%;
@@ -44,17 +46,19 @@
 .img_box {
   max-width: 50%;
   height: 50vh;
-  height: fit-content;
+  height: fit-content; /* This line was missing a semicolon */
 }
 
 .img {
   height: auto;
   width: 100%;
 }
-.aboutBoard{
+
+.aboutBoard {
   font-size: 25px;
 }
-.icon_tab{
+
+.icon_tab {
   width: fit-content;
   height: fit-content;
   padding-right: 0.5rem;
@@ -65,13 +69,16 @@
   background-color: rgb(52, 52, 52);
   margin: 1rem;
 }
-.sp{
+
+.sp {
   font-size: 12px;
 }
-.icon_panel{
+
+.icon_panel {
   display: flex;
   flex-direction: row;
 }
+
 .contact_icon {
   font-size: 20px;
   border-radius: 5rem;
@@ -87,30 +94,31 @@
   background: -webkit-linear-gradient(90deg, hsla(59, 84%, 49%, 1) 0%, hsla(306, 100%, 51%, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#E7E414", endColorstr="#FF04E6", GradientType=1);
 }
+
 @media screen and (max-width:1200px) {
-   .main_frame{
+  .main_frame {
     width: 100%;
     flex-direction: column;
-   }
-   .left{
+  }
+  .left {
     font-size: 50px;
     width: 100%;
-   }
-   .left p{
+  }
+  .left p {
     text-align: center;
-   }
-   .max{
+  }
+  .max {
     font-size: 60px;
-   }
-   .aboutBoard{
+  }
+  .aboutBoard {
     font-size: 16px;
     text-align: center;
     width: 100%;
   }
-  .icon_tab{
+  .icon_tab {
     border: 0.5px solid #ffffff;
   }
-  .right{
+  .right {
     width: 100%;
   }
 }

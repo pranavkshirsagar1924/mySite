@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import style from "../styles/project.module.css";
-import projectsData from './data';
+import projectsData from '../public/data';
 import Image from 'next/image';
 
 export default function Projects() {

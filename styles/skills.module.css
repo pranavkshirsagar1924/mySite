@@ -1,84 +1,88 @@
 .main_frame {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
-    border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.left {
+  font-size: 90px;
+  width: 50%;
+  height: 100%;
+}
+
+.canvas {
+  width: 50%;
+  height: 50vh;
+}
+
+.max {
+  width: 90%;
+  height: fit-content;
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: 120px;
+  background: linear-gradient(90deg, #5fdfff, #9eff0e, #5fff94, #7bfcfe);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 3s ease-in-out infinite; /* Typo fixed: 'infinitee' -> 'infinite' */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  .left {
-    font-size: 90px;
-    width: 50%;
-    height: 100%;
+  50% {
+    background-position: 100% 50%;
   }
-  .canvas{
-    width: 50%;
-    height: 50vh;
+  100% {
+    background-position: 0% 50%;
   }
-  .max {
-    width: 90%;
-    height: fit-content;
-    border-radius: 10px;
-    margin-top: 1rem;
-    font-size: 120px;
-    background: linear-gradient(90deg, #5fdfff, #9eff0e, #5fff94, #7bfcfe);
-      background-size: 300%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: gradient 3s ease-in-out infinitee;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
- 
-  @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-  }
-.min{
+}
+
+.min {
   font-size: 30px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-  .right {
-    width: 70%;
-    height: 80vh;
-    display: flex;
+
+.right {
+  width: 70%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  animation: 1s ease-in-out infinite; /* Typo fixed: 'infinit' -> 'infinite' */
+  overflow: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .main_frame {
+    width: 100%;
     flex-direction: column;
-    justify-content: center;
-    place-items: center;
-    animation:  1s ease-in-out infinit;
-    overflow: auto;
   }
-  
-  @media screen and (max-width:1200px) {
-    .main_frame{
-      width: 100%;
-      flex-direction: column;
-    }
-    .canvas{
-      width: 100%;
-      height: 50vh;
-      border: 2px solid white;
-    }
-    .right{
-      width: 100%;
-      height: fit-content;
-    }
-    .left{
-      width: 100%;
-    }
-    .left img{
-      width: 100%;
-    }
-    .max{
-      font-size: 40px;
-    }
-    .min{
-      font-size: 15px;
-    }
+  .canvas {
+    width: 100%;
+    height: 50vh;
+    border: 2px solid white;
   }
+  .right {
+    width: 100%;
+    height: fit-content;
+  }
+  .left {
+    width: 100%;
+  }
+  .left img {
+    width: 100%;
+  }
+  .max {
+    font-size: 40px;
+  }
+  .min {
+    font-size: 15px;
+  }
+}

@@ -56,7 +56,7 @@ export default function Hobbies() {
           cols={20}
           rows={5}
           value={note}
-          className={style.note}>Type the message</textarea>
+          className={style.note}></textarea>
         <button onClick={submit} className={style.button}>
           {loader ? <div className={style.loader}></div> : "Send"}
         </button>
