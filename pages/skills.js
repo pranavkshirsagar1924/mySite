@@ -18,7 +18,7 @@ export default function Skills() {
   return (
     <div className={style.main_frame}>
       <div className={style.left}>
-        <Image src='/images/hon.gif' alt='Animation' width={500} height={500} />
+        <Image src='/images/hon.gif' alt='Animation' width={450} height={450} />
       </div>
       <div className={style.right}>
         <ul className={style.skills}>

@@ -14,7 +14,7 @@
 }
 
 .max {
-  font-size: 120px;
+  font-size: 100px;
   background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff7e5f, #feb47b);
   background-size: 300%;
   -webkit-background-clip: text;
