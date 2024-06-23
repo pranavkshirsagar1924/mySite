@@ -18,7 +18,7 @@ export default function experience() {
                 </div>
             </div>
             <div className={style.left}>
-                <b className={style.max}>2Y+ Experience </b>
+                <b className={style.max}>2Y+ Experience </b>Of
                 Graphic Designer <br />
                 <b className={style.max}>Freelancer</b> <br />
                 Web Developer<br />
