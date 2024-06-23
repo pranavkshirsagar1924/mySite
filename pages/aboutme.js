@@ -9,7 +9,7 @@ const AboutMe = () => (
                 {/* Place the Image component here */}
                 <Image
                     className={style.img}
-                    src="/images/1.jpg"
+                    src="/images/logo.png"
                     alt="boy coding on laptop"
                     height={650}
                     width={600}
